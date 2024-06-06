@@ -1,17 +1,60 @@
-.main{
-  max-width: 1300px;
+.main {
+  max-width: 81.25rem; /* 1300px / 16 */
   margin-inline: auto;
   display: flex;
   align-items: stretch;
   justify-content: center;
-  gap: 1.5625rem; /* 25px */
-  margin-top: 60px;
-  margin-bottom: 60px;
+  gap: 1.5625rem; /* 25px / 16 */
+  margin-top: 3.75rem; /* 60px / 16 */
+  margin-bottom: 3.75rem; /* 60px / 16 */
 }
 
-.main-content{
+.main-content {
   min-width: 70%;
   width: 70%;
   margin: 0;
   position: relative;
+  min-height: 100%;
+  padding: 1.875rem; /* 30px / 16 */
+  background: #191f2b;
+  border: 0.0625rem solid #353c4a; /* 1px / 16 */
+  border-radius: 1.25rem; /* 20px / 16 */
+}
+
+.navbar {
+  position: absolute;
+  inset: 0 0 auto auto;
+  width: max-content;
+  border-radius: 0 1.25rem; /* 20px / 16 */
+  padding: 1rem; /* 16px / 16 */
+  box-shadow: none;
+  background: hsla(221, 24%, 15%, 0.75);
+  backdrop-filter: blur(10px);
+  border: 0.0625rem solid #353c4a; /* 1px / 16 */
+  z-index: 5;
+}
+
+.navbar-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem; /* 30px / 16 */
+  padding: 0 1.25rem; /* 20px / 16 */
+}
+
+.navbar-item {
+  list-style: none;
+}
+
+.navbar-link.active {
+  color: #2e85f3;
+}
+
+.navbar-link {
+  font-size: 0.9375rem; /* 15px / 16 */
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  color: #c9ced6;
 }
