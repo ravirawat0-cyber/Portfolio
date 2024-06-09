@@ -1,0 +1,139 @@
+.article{
+  display:flex;
+  flex-direction: column;
+  gap:1.8rem;
+  color: #c9ced6;
+}
+
+.article-title{
+  position: relative;
+  padding-bottom: 1rem;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.article-title::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3rem;
+  height: 0.375rem;
+  border-radius: 3px;
+  background: linear-gradient(to right, #9775d3, #673ab7);
+}
+
+h3, h4{
+  color: #ffffff;
+  margin: 0;
+}
+
+.title-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.icon-box:before{
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: #2e333d;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.icon-box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+h3{
+  font-size:1.4rem;
+  font-weight: 800;
+}
+
+.timeline-list{
+  margin-left: 65px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+
+.timeline-item{
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+
+.timeline-item-title {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.timeline-date {
+  color: #747474;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  letter-spacing: 0.03333em;
+}
+
+.timeline-text{
+  max-width: 700px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.skill-title{
+  margin-bottom: 20px;
+}
+
+.content-card::before{
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  z-index: -1;
+}
+.content-card{
+  padding: 25px 30px 30px;
+  position: relative;
+  background: #0b101b;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+
+.skills-item{
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+.skills-item:last-child{
+  margin: 0;
+}
+
+.title-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+

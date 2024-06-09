@@ -1,0 +1,140 @@
+.sidebar{
+  position: sticky;
+  top: 3.75rem; /* 60px */
+  height: max-content;
+  margin-bottom: 0;
+  margin-right: 0;
+  z-index: 1;
+  width: auto;
+  overflow: hidden;
+  background: #191f2b;
+  border: 0.0625rem solid #353c4a; /* 1px */
+  border-radius: 1.25rem; /* 20px */
+  padding: 1.875rem; /* 30px */
+  margin-inline: auto;
+}
+
+.sidebar-info{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5625rem; /* 25px */
+}
+
+.avatar-box{
+  border-radius: 1.25rem; /* 20px */
+  overflow: hidden;
+}
+
+.avatar-box img{
+  width: 9.375rem; /* 150px */
+}
+
+.name {
+  white-space: nowrap;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  letter-spacing: -0.015625rem; /* -0.25px */
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.profession{
+  color: white;
+  margin: auto;
+  padding: 0.3125rem 0.625rem; /* 5px 10px */
+  background: #353c4a;
+  font-size: 0.875rem; /* 14px */
+  font-weight: 300;
+  width: max-content;
+  border-radius: 0.5rem; /* 8px */
+}
+
+.sidebar-show-contacts{
+  opacity: 1;
+  visibility: visible;
+}
+
+.separator{
+  margin: 2rem 0; /* 32px 0 */
+  width: 100%;
+  height: 0.0625rem; /* 1px */
+  background: #353c4a;
+}
+
+.separator-2{
+  margin: 0.8rem 0; /* 32px 0 */
+  width: 100%;
+  height: 0.0625rem; /* 1px */
+  background: #353c4a;
+}
+
+.contact-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.875rem 0.9375rem; /* 30px 15px */
+}
+
+.contact-item{
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* 16px */
+  list-style: none;
+}
+
+
+.icon-box::before{
+  content: "";
+  position: absolute;
+  inset: 0.0625rem; /* 1px */
+  background: #353c4a;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+li{
+  list-style: none;
+}
+
+.icon-box{
+  position: relative;
+  width: 2.625rem; /* 42px */
+  height: 2.625rem; /* 42px */
+  border-radius: 0.75rem; /* 12px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.contact-title{
+  color: #a9afba;
+  font-size: 0.75rem; /* 12px */
+  text-transform: uppercase;
+  margin-bottom: 0.125rem; /* 2px */
+}
+
+.contact-link, address{
+  font-size: 0.875rem; /* 14px */
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9375rem; /* 15px */
+  padding-bottom: 0.25rem; /* 4px */
+  padding-left: 0.4375rem; /* 7px */
+}
+
+.social-link {
+  fill: #ffffff;
+  font-size: 1.125rem; /* 18px */
+}
