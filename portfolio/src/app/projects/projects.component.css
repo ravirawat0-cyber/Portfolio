@@ -112,3 +112,12 @@ mat-icon{
   display: flex;
   align-items: center;
 }
+
+
+
+@media (max-width: 800px){
+  .project-list{
+    grid-template-columns: 1fr;
+  }
+}
+

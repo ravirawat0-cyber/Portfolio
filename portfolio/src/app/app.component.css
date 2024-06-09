@@ -1,12 +1,10 @@
 .main {
-  max-width: 81.25rem; /* 1300px / 16 */
   margin-inline: auto;
   display: flex;
   align-items: stretch;
   justify-content: center;
   gap: 1.5625rem; /* 25px / 16 */
-  margin-top: 3.75rem; /* 60px / 16 */
-  margin-bottom: 3.75rem; /* 60px / 16 */
+  padding: 3rem 2rem;
 }
 
 .main-content {
@@ -57,4 +55,29 @@
   text-decoration: none;
   display: block;
   color: #c9ced6;
+}
+
+
+@media (max-width: 1080px) {
+  .main{
+    flex-direction: column;
+  }
+  .main-content{
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main{
+    padding: 2rem 1rem;
+  }
+
+  .navbar {
+    width: 100%;
+    border-radius: 1.25rem 1.25rem 0 0;
+  }
+  .content{
+    margin-top: 2rem;
+  }
+
 }
