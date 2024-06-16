@@ -125,3 +125,7 @@ address {
   fill: var(--primary-color);
   font-size: 1.125rem;
 }
+
+ul {
+  list-style: none;
+}

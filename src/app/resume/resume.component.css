@@ -134,3 +134,14 @@ h3 {
   gap: 0.3125rem;
   margin-bottom: 0.5rem;
 }
+
+@media (max-width: 37.5rem) {
+
+  .title-wrapper {
+    margin-bottom: 1rem;
+  }
+   .timeline-list{
+     margin: 0;
+   }
+
+}
