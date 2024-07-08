@@ -1,0 +1,131 @@
+.sidebar {
+  position: sticky;
+  top: 3rem;
+  height: max-content;
+  z-index: 1;
+  width: auto;
+  overflow: hidden;
+  background: var(--secondary-bg-color);
+  border: 0.0625rem solid var(--border-color);
+  border-radius: var(--box-radius);
+  padding: var(--padding);
+  margin-inline: auto;
+}
+
+.sidebar-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.avatar-box {
+  border-radius: var(--box-radius);
+  overflow: hidden;
+}
+
+.avatar-box img {
+  width: 9.375rem;
+}
+
+.name {
+  white-space: nowrap;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.015625rem;
+  margin-bottom: var(--small-gap);
+}
+
+.profession {
+  color: var(--primary-color);
+  margin: auto;
+  padding: 0.3125rem 0.625rem;
+  background: var(--border-color);
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-light);
+  width: max-content;
+  border-radius: 0.5rem;
+}
+
+.sidebar-show-contacts {
+  opacity: 1;
+  visibility: visible;
+}
+
+.separator,
+.separator-2 {
+  margin: 1.25rem 0;
+  width: 100%;
+  height: 0.0625rem;
+  background: var(--border-color);
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap) var(--small-gap);
+}
+
+.contact-item {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 0.0625rem;
+  background: var(--border-color);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.icon-box {
+  position: relative;
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.contact-title {
+  color: var(--secondary-color);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 0.125rem;
+}
+
+.contact-link,
+address {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-light);
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--small-gap);
+  padding-bottom: 0.25rem;
+  padding-left: 0.4375rem;
+}
+
+.social-link {
+  fill: var(--primary-color);
+  font-size: 1.125rem;
+}
+
+ul {
+  list-style: none;
+}

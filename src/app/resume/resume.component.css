@@ -1,0 +1,147 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  color: var(--secondary-color);
+}
+
+.article-title {
+  position: relative;
+  padding-bottom: 1rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.article-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3rem;
+  height: 0.375rem;
+  border-radius: 0.1875rem;
+  background: linear-gradient(to right, var(--gradient-color-start), var(--gradient-color-end));
+}
+
+h3, h4 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+  margin-bottom: 1.5625rem;
+}
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 0.0625rem;
+  background: #2e333d;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.icon-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  font-size: 1.125rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.timeline-list {
+  margin-left: 4.0625rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeline-item-title {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.timeline-date {
+  color: #747474;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  letter-spacing: 0.03333em;
+}
+
+.timeline-text {
+  max-width: 100%;
+  font-weight: var(--font-weight-light);
+  line-height: 1.6;
+}
+
+.skill-title {
+  margin-bottom: 1.25rem;
+}
+
+.content-card::before {
+  content: "";
+  position: absolute;
+  inset: 0.0625rem;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.content-card {
+  padding: 1.5625rem 1.875rem 1.875rem;
+  position: relative;
+  background: var(--primary-bg-color);
+  border-radius: 0.875rem;
+  cursor: pointer;
+}
+
+.skills-item {
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+.skills-item:last-child {
+  margin: 0;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 37.5rem) {
+
+  .title-wrapper {
+    margin-bottom: 1rem;
+  }
+   .timeline-list{
+     margin: 0;
+   }
+
+}
